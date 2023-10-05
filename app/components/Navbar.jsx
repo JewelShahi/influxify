@@ -3,9 +3,9 @@ import React from "react";
 
 const Navbar = () => {
   return (
-    <div className="">
+    <div className="flex justify-center mt-5 border-2 border-solid border-black sticky top-0">
       {/* desktop nav */}
-      <div className="flex px-4 py-2 absolute bg-white items-center mx-auto justify-between min-w-[470px] w-[100%]">
+      <div className="flex px-4 py-2 absolute bg-white items-center mx-auto justify-between min-w-[470px] w-[90%] rounded-standard basis-[250px]">
         <div>
           <Link href={"/"}>
             <svg
@@ -26,30 +26,30 @@ const Navbar = () => {
             </svg>
           </Link>
         </div>
-        <div className="flex flex-row justify-center flex-3 basis-3">
-          <ul>
-            <Link href={"/"} class="text-primary hover:text-secondary">
+        <div className="flex w-auto flex-row">
+          <ul className="flex flex-row gap-5 font-semibold font-[Arial]">
+            <Link href={"/"} className="text-gray transition hover:text-secondary duration-150">
               <li>Home</li>
             </Link>
-            <Link href={"/"} class="text-primary hover:text-secondary">
+            <Link href={"/"} className="text-gray transition hover:text-secondary duration-150">
               <li>About</li>
             </Link>
-            <Link href={"/"} class="text-primary hover:text-secondary">
+            <Link href={"/"} className="text-gray transition hover:text-secondary duration-150">
               <li>Services</li>
             </Link>
-            <Link href={"/"} class="text-primary hover:text-secondary">
+            <Link href={"/"} className="text-gray transition hover:text-secondary duration-150">
               <li>Reviews</li>
             </Link>
-            <Link href={"/"} class="text-primary hover:text-secondary">
+            <Link href={"/"} className="text-gray transition hover:text-secondary duration-150">
               <li>Support</li>
             </Link>
           </ul>
         </div>
         <div>
-          <button className="text-white bg-secondary hover:bg-secondary-hover p-[10px] m-[2px] rounded-standard">
+          <button className="text-white transition ease-in-out delay-[50ms] bg-secondary hover:bg-secondary-hover duration-[150ms] p-[10px] m-[2px] rounded-standard">
             Sign In
           </button>
-          <button className="text-white bg-black hover:bg-primary-hover p-[10px] m-[2px] rounded-standard">
+          <button className="text-white transition ease-in-out delay-[50ms] bg-black hover:bg-primary-hover duration-[150ms] p-[10px] m-[2px] rounded-standard">
             Free Trial
           </button>
         </div>

@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Influxify",
-  description: "The ultimate 2-in-One mobile store.",//primerno
+  description: "The ultimate 2-in-One mobile store.", //primerno
 };
 
 export default function RootLayout({ children }) {

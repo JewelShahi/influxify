@@ -12,7 +12,7 @@ module.exports = {
     colors: {
       primary: "#060640",
       secondary: "#00AA63",
-      paragraph: "#828297",
+      gray: "#828297",
       heroBg: "#ECF9FF",
       black: "#111111",
       white: "#ffffff",

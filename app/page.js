@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="">
       <Hero />
-      <HowItWorks />
+      <HowItWorks/>
       <About />
       <GlobalPromotion />
       <Packages />

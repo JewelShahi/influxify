@@ -35,9 +35,9 @@ const Hero = () => {
                 width="120"
                 height="120"
                 filterUnits="userSpaceOnUse"
-                color-interpolation-filters="sRGB"
+                colorInterpolationFilters="sRGB"
               >
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feColorMatrix
                   in="SourceAlpha"
                   type="matrix"
@@ -116,7 +116,7 @@ const Hero = () => {
                 <h5 className="font-bold">4.9</h5>
               </div>
             </div>
-            <p className="text-paragraph">
+            <p className="text-gray">
               There’s no shortage of ideas, what’s missing is the will to
               execute them – <b>Seth Godin</b>
             </p>
