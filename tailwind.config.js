@@ -22,6 +22,14 @@ module.exports = {
     borderRadius: {
       'standard': '10px',
     },
+    fontSize: {
+      'h1': '44px',
+      'h2': '36px',
+      'h3': '28px',
+      'h4': '26px',
+      'h5': '24px',
+      'h6': '22px',
+    }
   },
   plugins: [],
 };
