@@ -5,7 +5,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-center mt-5 border-2 border-solid border-black sticky top-0">
       {/* desktop nav */}
-      <div className="flex px-4 py-2 absolute bg-white items-center mx-auto justify-between min-w-[470px] w-[90%] rounded-standard basis-[250px]">
+      <div className="hidden sm:flex px-4 py-2 absolute bg-white items-center mx-auto justify-between min-w-[470px] w-[90%] rounded-standard basis-[250px]">
         <div>
           <Link href={"/"}>
             <svg
