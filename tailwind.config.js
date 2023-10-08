@@ -24,11 +24,11 @@ module.exports = {
     },
     fontSize: {
       'h1': '44px',
-      'h2': '36px',
-      'h3': '28px',
-      'h4': '26px',
-      'h5': '24px',
-      'h6': '22px',
+      'h2': '38px',
+      'h3': '26px',
+      'h4': '24px',
+      'h5': '22px',
+      'h6': '20px',
     }
   },
   plugins: [],

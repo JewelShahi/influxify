@@ -27,7 +27,7 @@ const Navbar = () => {
           </Link>
         </div>
         <div className="flex w-auto flex-row">
-          <ul className="flex flex-row gap-5 font-semibold font-[Arial]">
+          <ul className="flex flex-row gap-5 font-medium font-[Arial]">
             <Link href={"/"} className="text-gray transition hover:text-secondary duration-150">
               <li>Home</li>
             </Link>

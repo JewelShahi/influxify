@@ -12,8 +12,8 @@ export default function Home() {
       <Hero />
       <HowItWorks/>
       <About />
-      <GlobalPromotion />
       <Packages />
+      <GlobalPromotion />
       <CTA />
     </main>
   );

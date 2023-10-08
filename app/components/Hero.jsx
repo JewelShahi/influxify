@@ -3,16 +3,20 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen w-full bg-black/70"> {/* bg-heroBg */}
+    <div className="min-h-screen w-full bg-black/70">
+      {" "}
+      {/* bg-heroBg */}
       <div>
-        <h1>Perfect place for your business promotion</h1>
-        <p>
+        <h2 className="text-h2">Perfect place for your business promotion</h2>
+        <p className="w-[450px]">
           Businesses generally promote their brand, products, and services by
           identifying audience.
         </p>
         {/* Button for getting started and a videoplayer */}
         <div>
-          <button className="bg-primary">Get Started</button>
+          <button className="text-white transition ease-in-out delay-[50ms] bg-black hover:bg-primary-hover duration-[150ms] p-[10px] m-[2px] rounded-standard">
+            Get Started
+          </button>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="120"
@@ -117,14 +121,11 @@ const Hero = () => {
               </div>
             </div>
             <p className="text-gray">
-              There’s no shortage of ideas, what’s missing is the will to
-              execute them – <b>Seth Godin</b>
+              There's no shortage of ideas, what's missing is the will to
+              execute them - <b>Seth Godin</b>
             </p>
           </div>
         </div>
-      </div>
-      <div>
-        
       </div>
     </div>
   );

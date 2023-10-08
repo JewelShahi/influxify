@@ -5,8 +5,8 @@ const HowItWorks = () => {
     <div className="w-auto">
       <div>
         <div className="flex justify-center flex-col items-center mb-10">
-          <h1 className="text-h1">How it works</h1>
-          <p>
+          <h2 className="text-h2">How it works</h2>
+          <p className="w-[450px] text-center">
             Businesses generally promote their brand, products, and services by
             identifying audience.
           </p>
