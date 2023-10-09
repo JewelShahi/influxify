@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
 const page = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div>{/* // .map na data.js, s informaciq za telefonite v ShopItem */}</div>
+  );
+};
 
-export default page
+export default page;

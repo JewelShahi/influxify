@@ -23,8 +23,8 @@ module.exports = {
       'standard': '10px',
     },
     fontSize: {
-      'h1': '44px',
-      'h2': '38px',
+      'h1': '50px',
+      'h2': '45px',
       'h3': '26px',
       'h4': '24px',
       'h5': '22px',
