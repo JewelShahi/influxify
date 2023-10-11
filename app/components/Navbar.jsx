@@ -55,9 +55,9 @@ const Navbar = () => {
         </div>
       </div>
       {/* Mobile Nav */}
-      <div className="flex flex-col sm:hidden mx-auto items-center justify-center">
-        <div>
-          <ul className="space-y-6">
+      <div className="flex flex-col h-screen sm:hidden m-auto items-center justify-center">
+        <div className="text-center">
+          <ul className="py-8">
             <Link href={"/"}>
               <li>Home</li>
             </Link>
