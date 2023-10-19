@@ -3,72 +3,81 @@ import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="min-h-screen w-full bg-black/70">
+    <div className="min-h-screen w-full bg-heroBg/80">
       {" "}
       {/* bg-heroBg */}
-      <div>
-        <h2 className="text-h2">Perfect place for your business promotion</h2>
-        <p className="w-[450px]">
-          Businesses generally promote their brand, products, and services by
-          identifying audience.
-        </p>
-        {/* Button for getting started and a videoplayer */}
-        <div>
-          <button className="text-white transition ease-in-out delay-[50ms] bg-black hover:bg-primary-hover duration-[150ms] p-[10px] m-[2px] rounded-standard">
-            Get Started
-          </button>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="120"
-            height="120"
-            viewBox="0 0 120 120"
-            fill="none"
-          >
-            <g filter="url(#filter0_d_1_3034)">
-              <rect x="30" y="20" width="60" height="60" rx="30" fill="white" />
-              <path
-                d="M68.5 49.134C69.1667 49.5189 69.1667 50.4811 68.5 50.866L56.5 57.7942C55.8333 58.1791 55 57.698 55 56.9282L55 43.0718C55 42.302 55.8333 41.8209 56.5 42.2058L68.5 49.134Z"
-                fill="#00E5CC"
-              />
-            </g>
-            <defs>
-              <filter
-                id="filter0_d_1_3034"
-                x="0"
-                y="0"
-                width="120"
-                height="120"
-                filterUnits="userSpaceOnUse"
-                colorInterpolationFilters="sRGB"
-              >
-                <feFlood floodOpacity="0" result="BackgroundImageFix" />
-                <feColorMatrix
-                  in="SourceAlpha"
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
-                  result="hardAlpha"
+      <div className="flex flex-col md:flex-row items-center justify-evenly pt-[200px]">
+        <div className="px-3 py-2 items-center">
+          <h2 className="text-h2 max-w-xl p-2">Perfect place for your business promotion</h2>
+          <p className="w-[450px] p-2 ">
+            Businesses generally promote their brand, products, and services by
+            identifying audience.
+          </p>
+          {/* Button for getting started and a videoplayer */}
+          <div className="items-center justify-center inline-flex ">
+            <button className="text-white transition ease-in-out delay-[50ms] bg-black hover:bg-primary-hover duration-[150ms] h-14 p-2 -mt-4 rounded-standard">
+              Get Started
+            </button>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="120"
+              height="120"
+              viewBox="0 0 120 120"
+              fill="none"
+            >
+              <g filter="url(#filter0_d_1_3034)">
+                <rect
+                  x="30"
+                  y="20"
+                  width="60"
+                  height="60"
+                  rx="30"
+                  fill="white"
                 />
-                <feOffset dy="10" />
-                <feGaussianBlur stdDeviation="15" />
-                <feComposite in2="hardAlpha" operator="out" />
-                <feColorMatrix
-                  type="matrix"
-                  values="0 0 0 0 0 0 0 0 0 0.898039 0 0 0 0 0.8 0 0 0 0.1 0"
+                <path
+                  d="M68.5 49.134C69.1667 49.5189 69.1667 50.4811 68.5 50.866L56.5 57.7942C55.8333 58.1791 55 57.698 55 56.9282L55 43.0718C55 42.302 55.8333 41.8209 56.5 42.2058L68.5 49.134Z"
+                  fill="#00E5CC"
                 />
-                <feBlend
-                  mode="normal"
-                  in2="BackgroundImageFix"
-                  result="effect1_dropShadow_1_3034"
-                />
-                <feBlend
-                  mode="normal"
-                  in="SourceGraphic"
-                  in2="effect1_dropShadow_1_3034"
-                  result="shape"
-                />
-              </filter>
-            </defs>
-          </svg>
+              </g>
+              <defs>
+                <filter
+                  id="filter0_d_1_3034"
+                  x="0"
+                  y="0"
+                  width="120"
+                  height="120"
+                  filterUnits="userSpaceOnUse"
+                  colorInterpolationFilters="sRGB"
+                >
+                  <feFlood floodOpacity="0" result="BackgroundImageFix" />
+                  <feColorMatrix
+                    in="SourceAlpha"
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0"
+                    result="hardAlpha"
+                  />
+                  <feOffset dy="10" />
+                  <feGaussianBlur stdDeviation="15" />
+                  <feComposite in2="hardAlpha" operator="out" />
+                  <feColorMatrix
+                    type="matrix"
+                    values="0 0 0 0 0 0 0 0 0 0.898039 0 0 0 0 0.8 0 0 0 0.1 0"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in2="BackgroundImageFix"
+                    result="effect1_dropShadow_1_3034"
+                  />
+                  <feBlend
+                    mode="normal"
+                    in="SourceGraphic"
+                    in2="effect1_dropShadow_1_3034"
+                    result="shape"
+                  />
+                </filter>
+              </defs>
+            </svg>
+          </div>
           {/* comment/quote */}
           <div className="flex flex-col w-[350px] gap-5 p-3 pl-5 pr-5 bg-white rounded-standard">
             {/* rating and the quote svg */}
@@ -124,6 +133,14 @@ const Hero = () => {
               There's no shortage of ideas, what's missing is the will to
               execute them - <b>Seth Godin</b>
             </p>
+          </div>
+        </div>
+        <div className="block w-auto px-4 py-2 items-center">
+          <div>
+            <Image src="/assets/heroMain.png" width={670} height={530} />
+          </div>
+          <div className="-mt-[340px] -ml-8">
+            <Image src="/assets/Group15.png" width={810} height={415} />
           </div>
         </div>
       </div>
