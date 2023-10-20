@@ -17,7 +17,7 @@ const Footer = () => {
               Influxi<span className="text-secondary">fy</span>
             </h2>
           </div>
-          <p className="font-thin max-w-[300px] text-center md:text-justify ">
+          <p className="font-thin max-w-[300px] text-center">
             This is a big one and i consider it one of the most important things
             for a business.
           </p>
