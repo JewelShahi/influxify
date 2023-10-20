@@ -15,7 +15,6 @@ const PackageCard = ({ title, users, price }) => (
 );
 
 const Packages = () => {
-  // Define an array of data for the repeated elements
   const packageData = [
     {
       title: "The basic package to start your promotion",
@@ -52,7 +51,7 @@ const Packages = () => {
   return (
     <div>
       <div className="flex justify-around flex-row">
-        <h2 className="text-h2">Packages</h2>
+        <h2 className="text-h2 font-bold">Packages</h2>
         {/* arrow container div */}
         <div className="flex flex-row gap-1">
           {/* left arrow */}

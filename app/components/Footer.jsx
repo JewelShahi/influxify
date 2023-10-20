@@ -5,10 +5,19 @@ const Footer = () => {
     <div className="w-full pt-10 items-center justify-center">
       {/* Main*/}
       <div className="flex flex-col md:flex-row space-y-10 justify-evenly px-4 py-12 bg-primary text-white text-center md:text-left items-center ">
-        {/* Bizpro Logo */}
+        {/* Influxify Logo */}
         <div className="space-y-5">
-          <h2 className="font-bold text-[50px]">Influxi<span className="text-secondary">fy</span></h2>
-          <p className="font-thin max-w-[350px]">
+          <div className="flex row gap-2 items-center justify-center">
+            <img
+              src="/influxify-logo.png"
+              alt="influxify website logo"
+              width="50px"
+            />
+            <h2 className="font-bold text-[50px]">
+              Influxi<span className="text-secondary">fy</span>
+            </h2>
+          </div>
+          <p className="font-thin max-w-[300px] text-center md:text-justify ">
             This is a big one and i consider it one of the most important things
             for a business.
           </p>
@@ -21,7 +30,7 @@ const Footer = () => {
         </div>
         {/* Quick Links */}
         <div>
-          <h4 className="font-medium text-[18px] py-3">Quick Links</h4>
+          <h4 className="font-bold text-[18px] py-3">Quick Links</h4>
           <ul className="font-thin space-y-3 text-[15px]">
             <li>Home</li>
             <li>About</li>
@@ -31,7 +40,7 @@ const Footer = () => {
         </div>
         {/* Company */}
         <div>
-          <h4 className="font-medium text-[18px] py-3">Company</h4>
+          <h4 className="font-bold text-[18px] py-3">Company</h4>
           <ul className="font-thin space-y-3 text-[15px]">
             <li>About</li>
             <li>Contact</li>
@@ -41,7 +50,7 @@ const Footer = () => {
         </div>
         {/* Information */}
         <div>
-          <h4 className="font-medium text-[18px] py-3">Information</h4>
+          <h4 className="font-bold text-[18px] py-3">Information</h4>
           <ul className="font-thin space-y-3 text-[15px]">
             <li>Privacy Policy</li>
             <li>Terms & Condition</li>

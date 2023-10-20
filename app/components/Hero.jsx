@@ -4,11 +4,12 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="min-h-screen w-full bg-heroBg/80">
-      {" "}
       {/* bg-heroBg */}
-      <div className="flex flex-col md:flex-row items-center justify-evenly pt-[200px]">
+      <div className="flex flex-col md:flex-row items-center justify-around md:justify-center md:w-[100%] flex-wrap mt-[80px]">
         <div className="px-3 py-2 items-center">
-          <h2 className="text-h2 max-w-xl p-2">Perfect place for your business promotion</h2>
+          <h2 className="text-h2 max-w-xl p-2 font-bold">
+            Perfect place for your business promotion
+          </h2>
           <p className="w-[450px] p-2 ">
             Businesses generally promote their brand, products, and services by
             identifying audience.
@@ -137,10 +138,10 @@ const Hero = () => {
         </div>
         <div className="block w-auto px-4 py-2 items-center">
           <div>
-            <Image src="/assets/heroMain.png" width={670} height={530} />
+          <img src="/influxify-logo.png" alt="s" width="200px"/>
           </div>
           <div className="-mt-[340px] -ml-8">
-            <Image src="/assets/Group15.png" width={810} height={415} />
+            <img src="/influxify-logo.png" alt="s" width="200px"/>
           </div>
         </div>
       </div>
