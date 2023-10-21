@@ -13,7 +13,7 @@ const Footer = () => {
               alt="influxify website logo"
               width="50px"
             />
-            <h2 className="font-bold text-[50px]">
+            <h2 className="font-bold text-[50px] xs:text-[35px]">
               Influxi<span className="text-secondary">fy</span>
             </h2>
           </div>
@@ -29,34 +29,36 @@ const Footer = () => {
           </ul>
         </div>
         {/* Quick Links */}
-        <div>
-          <h4 className="font-bold text-[18px] py-3">Quick Links</h4>
-          <ul className="font-thin space-y-3 text-[15px]">
-            <li>Home</li>
-            <li>About</li>
-            <li>Appointment</li>
-            <li>Contact</li>
-          </ul>
-        </div>
-        {/* Company */}
-        <div>
-          <h4 className="font-bold text-[18px] py-3">Company</h4>
-          <ul className="font-thin space-y-3 text-[15px]">
-            <li>About</li>
-            <li>Contact</li>
-            <li>Careers</li>
-            <li>Press</li>
-          </ul>
-        </div>
-        {/* Information */}
-        <div>
-          <h4 className="font-bold text-[18px] py-3">Information</h4>
-          <ul className="font-thin space-y-3 text-[15px]">
-            <li>Privacy Policy</li>
-            <li>Terms & Condition</li>
-            <li>FAQ</li>
-            <li>...</li>
-          </ul>
+        <div className="flex flex-1 flex-row justify-evenly max-w-[600px] items-start gap-5 xs:flex-col xs:items-center">
+          <div className="text-center">
+            <h4 className="font-bold text-[18px] py-3">Quick Links</h4>
+            <ul className="font-thin space-y-3 text-[15px]">
+              <li>Home</li>
+              <li>About</li>
+              <li>Appointment</li>
+              <li>Contact</li>
+            </ul>
+          </div>
+          {/* Company */}
+          <div className="text-center">
+            <h4 className="font-bold text-[18px] py-3">Company</h4>
+            <ul className="font-thin space-y-3 text-[15px]">
+              <li>About</li>
+              <li>Contact</li>
+              <li>Careers</li>
+              <li>Press</li>
+            </ul>
+          </div>
+          {/* Information */}
+          <div className="text-center">
+            <h4 className="font-bold text-[18px] py-3 ">Information</h4>
+            <ul className="font-thin space-y-3 text-[15px]">
+              <li>Privacy Policy</li>
+              <li>Terms & Condition</li>
+              <li>FAQ</li>
+              <li>...</li>
+            </ul>
+          </div>
         </div>
       </div>
       {/* Under*/}

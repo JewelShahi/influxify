@@ -49,7 +49,7 @@ const Navbar = () => {
               <li>About</li>
             </a>
             <Link
-              href={"/"}
+              href={"/services"}
               className="text-gray transition hover:text-secondary duration-150"
             >
               <li>Services</li>
@@ -87,7 +87,7 @@ const Navbar = () => {
             <Link href={"/"}>
               <li>About</li>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/services"}>
               <li>Services</li>
             </Link>
             <Link href={"/"}>

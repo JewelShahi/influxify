@@ -29,6 +29,25 @@ module.exports = {
       'h4': '24px',
       'h5': '22px',
       'h6': '20px',
+    },
+    screens: {
+      'xs' : {'max' : '320px'},
+      // => @media (max-width: 320px) { ... }
+
+      'sm': '640px',
+      // => @media (min-width: 640px) { ... }
+
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
     }
   },
   plugins: [],
