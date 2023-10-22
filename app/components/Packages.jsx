@@ -1,15 +1,19 @@
 import React from "react";
 
 const PackageCard = ({ title, users, price }) => (
-  <div className="flex flex-col w-[300px] mh-[300px] bg-[#dbd9d9] rounded-standard">
-    <p className="w-[100%] h-[200px] bg-secondary p-2 rounded-standard">Image</p>
-    <h5 className="text-h5 w-[100%]">{title}</h5>
-    <div className="flex flex-row justify-between mt-auto p-2">
-      <div className="flex flex-row">
-        <p>users </p>
-        <p>{users}</p>
+  <div className="inline-block px-3 py-1">
+    <div className="w-[300px] h-[350px] bg-[#dbd9d9] rounded-standard flex flex-col items-stretch justify-between">
+      <p className="w-[100%] h-[200px] bg-secondary p-2 rounded-standard">
+        Image
+      </p>
+      <h5 className="text-h5 w-[100%]">{title}</h5>
+      <div className="flex flex-row justify-between mt-auto p-2">
+        <div className="flex flex-row gap-1">
+          <p>users </p>
+          <p>{users}</p>
+        </div>
+        <p className="text-secondary">{price}</p>
       </div>
-      <p className="text-secondary">{price}</p>
     </div>
   </div>
 );
@@ -99,7 +103,7 @@ const Packages = () => {
         </div>
       </div>
       {/* container for the cards */}
-      <div className="flex justify-end overflow-x-auto gap-5">
+      <div className="overflow-x-auto flex w-[100%]">
         {packageData.map((item, index) => (
           <PackageCard key={index} {...item} />
         ))}
