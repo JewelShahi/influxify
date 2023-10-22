@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 
@@ -5,7 +6,7 @@ const Hero = () => {
   return (
     <div className="min-h-screen w-full bg-heroBg/80">
       {/* bg-heroBg */}
-      <div className="flex flex-col md:flex-row items-center justify-around md:justify-center md:w-[100%] flex-wrap relative top-[140px]">
+      <div className="flex flex-col lg:flex-row items-center justify-around md:justify-center md:w-[100%] flex-wrap relative top-[140px]">
         <div className="px-3 py-2 items-center">
           <h2 className="text-h2 max-w-xl p-2 font-bold">
             Perfect place for your business promotion
@@ -136,12 +137,17 @@ const Hero = () => {
             </p>
           </div>
         </div>
-        <div className="block w-auto px-4 py-2 items-center">
+        <div className="hidden sxl:flex flex-col w-auto px-4 py-2 items-center">
           <div>
-          <img src="/influxify-logo.png" alt="s" width="200px"/>
+            <Image
+              src="/assets/heroMain.png"
+              alt="s"
+              width={600}
+              height={600}
+            />
           </div>
           <div className="-mt-[340px] -ml-8">
-            <img src="/influxify-logo.png" alt="s" width="200px"/>
+            <Image src="/assets/Group15.png" alt="s" width={500} height={500} />
           </div>
         </div>
       </div>
