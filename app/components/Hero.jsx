@@ -5,7 +5,7 @@ const Hero = () => {
   return (
     <div className="min-h-screen w-full bg-heroBg/80">
       {/* bg-heroBg */}
-      <div className="flex flex-col md:flex-row items-center justify-around md:justify-center md:w-[100%] flex-wrap mt-[80px]">
+      <div className="flex flex-col md:flex-row items-center justify-around md:justify-center md:w-[100%] flex-wrap relative top-[140px]">
         <div className="px-3 py-2 items-center">
           <h2 className="text-h2 max-w-xl p-2 font-bold">
             Perfect place for your business promotion
