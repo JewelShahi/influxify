@@ -5,7 +5,10 @@
 
 html, body {
   scroll-behavior: smooth;
+<<<<<<< HEAD
   overflow-x: hidden;
+=======
+>>>>>>> d782e5aecb4093c6f06b6524bede9aa1ec50932f
 }
 
 * {
@@ -17,6 +20,7 @@ html, body {
 
 ::-webkit-scrollbar {
   width: 12px;
+  height: 12px;
 }
 
 ::-webkit-scrollbar-track {

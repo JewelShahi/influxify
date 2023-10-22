@@ -3,7 +3,6 @@ import Hero from "./components/Hero";
 import HowItWorks from "./components/HowItWorks";
 import About from "./components/About";
 import GlobalPromotion from "./components/GlobalPromotion";
-import CTA from "./components/CTA";
 import Packages from "./components/Packages";
 
 export default function Home() {
@@ -14,7 +13,6 @@ export default function Home() {
       <About />
       <Packages />
       <GlobalPromotion />
-      <CTA />
     </main>
   );
 }
