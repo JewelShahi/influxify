@@ -4,15 +4,33 @@ const HowItWorks = () => {
   return (
     <div className="flex w-auto items-center justify-center">
       <div className="">
-        <div className="flex justify-center flex-col items-center mb-10">
-          <h2 className="text-h2 font-bold">How it works</h2>
+        <div className="flex justify-center flex-col py-16 items-center mb-10">
+          <h2 className="text-h2 flex font-bold">
+            How it works{" "}
+            <div>
+              <svg
+              className="-ml-24 p-1"
+                width="46"
+                height="23"
+                viewBox="0 0 46 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M41 23C41 18.2261 39.1036 13.6477 35.7279 10.2721C32.3523 6.89642 27.7739 5 23 5C18.2261 5 13.6477 6.89642 10.2721 10.2721C6.89642 13.6477 5 18.2261 5 23"
+                  stroke="#00E5CC"
+                  strokeWidth="10"
+                />
+              </svg>
+            </div>
+          </h2>
           <p className="w-[450px] text-center">
             Businesses generally promote their brand, products, and services by
             identifying audience.
           </p>
         </div>
-        <div className="flex justify-center m-auto gap-10 w-[70%]">
-          <div className="w-[200px] p-5">
+        <div className="flex flex-col md:flex-row space-x-24 justify-center items-center mx-auto gap-4 w-[70%]">
+          <div className="w-[310px] md:w-[500px] h-[310px] p-6 shadow-lg rounded-standard shadow-primary/60 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -56,10 +74,15 @@ const HowItWorks = () => {
                 </clipPath>
               </defs>
             </svg>
-            <h4 className="text-h4">Something</h4>
-            <p>Paragraph</p>
+            <div className="py-2 px-3 space-y-4">
+              <h4 className="text-h4">Choose Packages</h4>
+              <p>
+                Businesses generally promote their brand, products, and services
+                by identifying audience users.
+              </p>
+            </div>
           </div>
-          <div className="w-[200px] p-5">
+          <div className="w-[310px] md:w-[500px] h-[310px] p-6 shadow-lg rounded-standard shadow-primary/60 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -100,10 +123,15 @@ const HowItWorks = () => {
                 </clipPath>
               </defs>
             </svg>
-            <h4 className="text-h4">Something</h4>
-            <p>Paragraph</p>
+            <div className="py-2 px-3 space-y-4">
+              <h4 className="text-h4">Schedule appointment</h4>
+              <p>
+                When you have important information to pass onto your people,
+                text messaging can be a great way to do it.
+              </p>
+            </div>
           </div>
-          <div className="w-[200px] p-5">
+          <div className="w-[310px] md:w-[500px] h-[310px] p-6 shadow-lg rounded-standard shadow-primary/60 ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="40"
@@ -147,8 +175,13 @@ const HowItWorks = () => {
                 </clipPath>
               </defs>
             </svg>
-            <h4 className="text-h4">Something</h4>
-            <p>Paragraph</p>
+            <div className="py-2 px-3 space-y-4">
+              <h4 className="text-h4">Grow together</h4>
+              <p>
+                Texting can sometimes come across as an impersonal way to
+                communicate, it can be highly beneficial.
+              </p>
+            </div>
           </div>
         </div>
       </div>
