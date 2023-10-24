@@ -33,7 +33,7 @@ const Navbar = () => {
                 <li>Home</li>
               </Link>
               <a
-                href={"#about"}
+                href={"/#about"}
                 className="text-gray transition hover:text-secondary duration-150"
               >
                 <li>About</li>
@@ -117,7 +117,7 @@ const Navbar = () => {
             <Link href={"/"}>
               <li className="text-h3 font-semibold text-white py-4 transition hover:text-secondary duration-150">Home</li>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/#about"}>
               <li className="text-h3 font-semibold text-white py-4 transition hover:text-secondary duration-150">About</li>
             </Link>
             <Link href={"/services"}>
