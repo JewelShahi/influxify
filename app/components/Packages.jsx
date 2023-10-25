@@ -1,11 +1,12 @@
+import Image from "next/image";
 import React from "react";
 
-const PackageCard = ({ title, users, price }) => (
+const PackageCard = ({ title, users, price, image }) => (
   <div className="inline-block px-3 py-1">
-    <div className="w-[300px] h-[350px] bg-[#dbd9d9] rounded-standard flex flex-col items-stretch justify-between">
-      <p className="w-[100%] h-[200px] bg-secondary p-2 rounded-standard">
-        Image
-      </p>
+    <div className="w-[300px] h-[350px] bg-[white] rounded-standard px-2 py-3 flex flex-col items-stretch justify-between">
+      <div className="w-[100%] h-[200px] bg-secondary p-2 rounded-standard">
+        <Image src={image} width={200} height={200} />
+      </div>
       <h5 className="text-h5 w-[100%]">{title}</h5>
       <div className="flex flex-row justify-between mt-auto p-2">
         <div className="flex flex-row gap-1">
@@ -24,38 +25,62 @@ const Packages = () => {
       title: "The basic package to start your promotion",
       users: "100+ users",
       price: "$79.00",
+      image: '/assets/heroMain.png',
     },
     {
       title: "The basic package to start your promotion",
       users: "200+ users",
       price: "$89.00",
+      image: '/assets/heroMain.png',
     },
     {
       title: "Another package title",
       users: "300+ users",
       price: "$99.00",
+      image: '/assets/heroMain.png',
     },
     {
       title: "Yet another package title",
       users: "400+ users",
       price: "$109.00",
+      image: '/assets/heroMain.png',
     },
     {
       title: "One more package title",
       users: "500+ users",
       price: "$119.00",
+      image: '/assets/heroMain.png',
     },
     {
       title: "One more package title",
       users: "600+ users",
       price: "$129.00",
+      image: '/assets/heroMain.png',
     },
   ];
 
   return (
-    <div>
-      <div className="flex justify-around flex-row">
-        <h2 className="text-h2 font-bold">Packages</h2>
+    <div className="bg-[#ECF9FF] py-20">
+      <div className="flex justify-around flex-row items-center space-y-16 py-6">
+        <div>
+          <h2 className="text-h2 font-bold flex">
+            <svg
+              className="-mr-[104px]"
+              width="46"
+              height="23"
+              viewBox="0 0 46 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M41 23C41 18.2261 39.1036 13.6477 35.7279 10.2721C32.3523 6.89642 27.7739 5 23 5C18.2261 5 13.6477 6.89642 10.2721 10.2721C6.89642 13.6477 5 18.2261 5 23"
+                stroke="#00E5CC"
+                strokeWidth="10"
+              />
+            </svg>
+            Popular Packages
+          </h2>
+        </div>
         {/* arrow container div */}
         <div className="flex flex-row gap-1">
           {/* left arrow */}
@@ -103,7 +128,7 @@ const Packages = () => {
         </div>
       </div>
       {/* container for the cards */}
-      <div className="overflow-x-auto flex w-[100%]">
+      <div className="overflow-x-scroll ml-16 flex w-[100%]">
         {packageData.map((item, index) => (
           <PackageCard key={index} {...item} />
         ))}

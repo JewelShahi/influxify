@@ -1,8 +1,9 @@
+import Image from "next/image";
 import React from "react";
 
 const About = () => {
   return (
-    <div className="flex flex-row mb-[20px] pt-[50px] items-center justify-evenly flex-wrap" id="about">
+    <div className="flex flex-col md:flex-row py-16 px-8 items-center justify-evenly " id="about">
       <div className="flex flex-col w-[50%]">
         <h1 className="text-h1 font-bold">About us</h1>
         <p className="w-[400px] break-words">
@@ -132,8 +133,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex mx-2">
-        <img src="/influxify-logo.png" alt="ll" width="200px" />
+      <div className="flex mx-2 p-2">
+        <Image src="/assets/Group25.png" alt="ll" width={600} height={600} />
       </div>
     </div>
   );
