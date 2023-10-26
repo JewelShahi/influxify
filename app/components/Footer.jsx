@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Footer = () => {
@@ -22,10 +23,42 @@ const Footer = () => {
             for a business.
           </p>
           <ul className="flex space-x-2 justify-center">
-            <li>fb</li>
-            <li>fb</li>
-            <li>fb</li>
-            <li>fb</li>
+            <li>
+              <button>
+                <Image
+                  src={"/assets/Facebook.png"}
+                  width={30}
+                  height={30}
+                />
+              </button>
+            </li>
+            <li>
+              <button>
+                <Image
+                  src={"/assets/Instagram.png"}
+                  width={30}
+                  height={30}
+                />
+              </button>
+            </li>
+            <li>
+              <button>
+                <Image
+                  src={"/assets/et_twitter.png"}
+                  width={30}
+                  height={30}
+                />
+              </button>
+            </li>
+            <li>
+              <button>
+                <Image
+                  src={"/assets/LinkedIn.png"}
+                  width={30}
+                  height={30}
+                />
+              </button>
+            </li>
           </ul>
         </div>
         {/* Quick Links */}
