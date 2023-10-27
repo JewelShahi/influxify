@@ -6,7 +6,7 @@ function LogIn() {
     <div className="h-screen w-full flex flex-col md:flex-row items-center justify-evenly bg-secondary/30 ">
       <Image src={"/assets/heroMain.png"} width={300} height={300} alt="" />
       <div>
-        <h1>Sign In to your account</h1>
+        <h1>Log In to your account</h1>
         <div>
           <div>
             <h6>Email</h6>
@@ -18,12 +18,12 @@ function LogIn() {
           </div>
           <div className="flex">
             <input type="checkbox" name="" id="" />
-            <button>Sign In</button>
+            <button>Log In</button>
           </div>
         </div>
         <div>
           <hr />
-          Sign in with
+          Log in with
           <button>Google</button>
           <button>Facebook</button>
           <button>Apple</button>
