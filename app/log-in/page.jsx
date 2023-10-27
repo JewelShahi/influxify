@@ -8,18 +8,30 @@ function LogIn() {
       <div>
         <h1>Log In to your account</h1>
         <div>
-          <div>
-            <h6>Email</h6>
-            <input type="text" placeholder="" />
-          </div>
-          <div>
-            <h6>Password</h6>
-            <input type="password" placeholder="" />
-          </div>
-          <div className="flex">
-            <input type="checkbox" name="" id="" />
-            <button>Log In</button>
-          </div>
+          <form action="">
+            <label htmlFor="email">E-mail</label>
+            <br />
+            <input
+              type="email"
+              placeholder="E-mail..."
+              name="email"
+              className="input"
+            />
+            <br />
+            <label htmlFor="password">Password</label>
+            <br />
+            <input
+              type="password"
+              placeholder="Password..."
+              name="password"
+              className="input"
+            />
+            <br />
+            <input type="checkbox" name="agree" />
+            <label htmlFor="agree">Remember me</label>
+            <br />
+            <input type="submit" value="LogIn" />
+          </form>
         </div>
         <div>
           <hr />

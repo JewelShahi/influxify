@@ -3,6 +3,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .input {
+    padding: 10px;
+    border-radius: 0.25rem;
+    color: #000;
+    border: 1px solid #ccc; 
+    outline: none;
+  }
+}
+
 html, body {
   scroll-behavior: smooth;
   overflow-x: hidden;

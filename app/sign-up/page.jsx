@@ -14,22 +14,44 @@ function LogIn() {
         <h1>Create an account</h1>
         <form action="">
           <div>
-            <label htmlFor="firstName">Full Name</label>
-            <div>
-              <input type="text" placeholder="First Name..." name="firstName" />
-              <input type="text" placeholder="Last Name..." name="lastName" />
+            <label htmlFor="firstName">Full Name</label> <br />
+            <div className="flex flex-row gap-2">
+              <input
+                type="text"
+                placeholder="First Name..."
+                name="firstName"
+                className="input"
+              />
+              <input
+                type="text"
+                placeholder="Last Name..."
+                name="lastName"
+                className="input"
+              />
             </div>
           </div>
           <label htmlFor="username">Username</label> <br />
-          <input type="text" placeholder="Username..." name="username" /> <br />
+          <input
+            type="text"
+            placeholder="Username..."
+            name="username"
+            className="input"
+          />{" "}
+          <br />
           <label htmlFor="">E-mail</label> <br />
-          <input type="email" placeholder="E-mail..." name="e-mail" />
+          <input
+            type="email"
+            placeholder="E-mail..."
+            name="e-mail"
+            className="input"
+          />
           <br />
           <label htmlFor="password">Password</label> <br />
           <input
             type="password"
             placeholder="Password..."
             name="password"
+            className="input"
           />
           <br />
           <label htmlFor="changePassword">Change password</label> <br />
@@ -37,6 +59,7 @@ function LogIn() {
             type="password"
             placeholder="Change password..."
             name="changePassword"
+            className="input"
           />
           <br />
           <input type="checkbox" name="agree" />
