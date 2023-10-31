@@ -60,10 +60,10 @@ const Packages = () => {
   ];
 
   return (
-    <div className="bg-[#ECF9FF] py-20">
-      <div className="flex justify-around flex-row items-center space-y-16 py-6">
-        <div>
-          <h2 className="text-h2 font-bold flex">
+    <div className="bg-[#ECF9FF] py-20 flex flex-col">
+      <div className="flex justify-center flex-row mb-2">
+        <div className="flex justify-center items-center">
+          <h2 className="text-h2 font-bold flex w-[500px]">
             <svg
               className="-mr-[104px]"
               width="46"
@@ -128,7 +128,7 @@ const Packages = () => {
         </div>
       </div>
       {/* container for the cards */}
-      <div className="overflow-x-scroll ml-16 flex w-[100%]">
+      <div className="overflow-x-scroll ml-3 flex w-[100%] items-end justify-start">
         {packageData.map((item, index) => (
           <PackageCard key={index} {...item} />
         ))}

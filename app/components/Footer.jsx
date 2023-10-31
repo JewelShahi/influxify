@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className="w-full pt-10 items-center justify-center">
+    <div className="w-full items-center justify-center">
       {/* Main*/}
       <div className="flex flex-col md:flex-row space-y-10 justify-evenly px-4 py-12 bg-primary text-white text-center md:text-left items-center ">
         {/* Influxify Logo */}
@@ -14,8 +14,8 @@ const Footer = () => {
               alt="influxify website logo"
               width="50px"
             />
-            <h2 className="font-bold text-[50px] xs:text-[35px]">
-              Influxi<span className="text-secondary">fy</span>
+            <h2 className="font-bold logo text-[50px] xs:text-[35px]">
+              Influxi<span className="text-secondary logo">fy</span>
             </h2>
           </div>
           <p className="font-thin max-w-[300px] text-center">

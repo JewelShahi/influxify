@@ -3,7 +3,7 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="flex flex-col md:flex-row py-16 px-8 items-center justify-evenly " id="about">
+    <div className="flex flex-col md:flex-row py-16 px-8 items-center justify-evenly mt-[10px]" id="about">
       <div className="flex flex-col w-[50%]">
         <h1 className="text-h1 font-bold">About us</h1>
         <p className="w-[400px] break-words">

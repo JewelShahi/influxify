@@ -18,8 +18,8 @@ const Navbar = () => {
               width={30}
               height={30}
             />
-            <h2 className="text-h3 font-bold">
-              Influxi<span className="text-secondary">fy</span>
+            <h2 className="text-h3 font-bold logo">
+              Influxi<span className="text-secondary logo">fy</span>
             </h2>
           </Link>
         </div>
@@ -45,13 +45,13 @@ const Navbar = () => {
                 <li>Services</li>
               </Link>
               <Link
-                href={"/"}
+                href={"/reviews"}
                 className="text-gray transition hover:text-secondary duration-150"
               >
                 <li>Reviews</li>
               </Link>
               <Link
-                href={"/"}
+                href={"/support"}
                 className="text-gray transition hover:text-secondary duration-150"
               >
                 <li>Support</li>
@@ -123,10 +123,10 @@ const Navbar = () => {
             <Link href={"/services"}>
               <li className="text-h3 font-semibold text-white py-4 transition hover:text-secondary duration-150">Services</li>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/reviews"}>
               <li className="text-h3 font-semibold text-white py-4 transition hover:text-secondary duration-150">Reviews</li>
             </Link>
-            <Link href={"/"}>
+            <Link href={"/support"}>
               <li className="text-h3 font-semibold text-white py-4 transition hover:text-secondary duration-150">Support</li>
             </Link>
           </ul>
