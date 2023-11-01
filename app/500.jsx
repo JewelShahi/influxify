@@ -1,14 +1,15 @@
 import React from "react";
+import Image from "next/image";
 
 const InternalServerError = () => {
   return (
     <div className="h-screen w-full flex flex-col justify-center items-center text-center bg-heroBg px-3">
-      <img
-        src="/assets/500.svg"
+      <Image
+        src={"/assets/500.svg"}
         alt="500 internal server error"
-        width="500px"
-        className="w-[30%] min-w-[270px] my-[15px]"
-        loading="lazy"
+        width={500}
+        height={500}
+        className="w-[40%] max-w-[500px] min-w-[270px] my-[15px]"
       />
       <h2 className="text-[30px] sm:text-[50px] font-bold">
         Internal Server Error
