@@ -7,7 +7,7 @@ const Navbar = () => {
   const [clicked, setClicked] = useState(false);
 
   return (
-    <div className="flex justify-center sticky z-50">
+    <div className="flex justify-center z-50">
       {/* desktop nav */}
       <div className="flex px-4 py-2 absolute bg-white items-center mx-auto justify-between w-[90%] rounded-standard top-10 basis-[250px]">
         <div>
@@ -59,10 +59,10 @@ const Navbar = () => {
             </ul>
           </div>
           <div>
-            <button className="text-white transition ease-in-out delay-[50ms] bg-secondary hover:bg-secondary-hover duration-[150ms] p-[10px] m-[2px] rounded-standard">
+            <button className="text-white transition ease-in-out delay-[50ms] bg-secondary hover:bg-secondary-hover duration-[150ms] p-[10px] m-[2px] rounded-standard click-animation">
               <Link href={"/log-in"}>Log In</Link>
             </button>
-            <button className="text-white transition ease-in-out delay-[50ms] bg-black hover:bg-primary-hover duration-[150ms] p-[10px] m-[2px] rounded-standard">
+            <button className="text-white transition ease-in-out delay-[50ms] bg-black hover:bg-primary-hover duration-[150ms] p-[10px] m-[2px] rounded-standard click-animation">
               <Link href={"/sign-up"}>Sign Up</Link>
             </button>
           </div>

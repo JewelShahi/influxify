@@ -1,0 +1,12 @@
+<svg id="SvgjsSvg1001" width="288" height="288"
+  xmlns="http://www.w3.org/2000/svg" version="1.1"
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:svgjs="http://svgjs.com/svgjs">
+  <defs id="SvgjsDefs1002"></defs>
+  <g id="SvgjsG1008">
+    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 30 30" width="288" height="288">
+      <path fill="#0fba34" d="M0 5C0 3.34314 1.34315 2 3 2H27C28.6569 2 30 3.34315 30 5V7.41516L15 15.8526L0 7.41513V5Z" class="color0A0A0A svgShape"></path>
+      <path fill="#0fba34" d="M0 9.70983V25C0 26.6569 1.34315 28 3 28H27C28.6569 28 30 26.6569 30 25V9.70986L15 18.1473L0 9.70983Z" class="color0A0A0A svgShape"></path>
+    </svg>
+  </g>
+</svg>

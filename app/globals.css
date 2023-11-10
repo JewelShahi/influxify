@@ -1,23 +1,62 @@
-@import url('https://fonts.googleapis.com/css2?family=Lunasima&display=swap'); /*main font*/
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap'); /*for logo*/
+@import url("https://fonts.googleapis.com/css2?family=Lunasima&display=swap"); /*main font*/
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"); /*for logo*/
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer utilities {
   .input {
-    padding: 10px;
+    padding: 10px 15px;
     border-radius: 0.25rem;
     color: #000;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     outline: none;
+    gap: 10px;
   }
-  .logo{
+
+  .inside-input {
+    padding: 10px 15px;
+    border-radius: 0.25rem;
+    color: #000;
+    border: 1px solid #ccc;
+    outline: none;
+    gap: 10px;
+    width: 50%;
+  }
+
+  .submit {
+    color: white;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+
+  .click-animation {
+    transition: 300ms;
+  }
+
+  .click-animation:active {
+    transform: scale(0.92);
+  }
+
+  .border-animation {
+    transition: border 400ms, box-shadow 400ms;
+  }
+
+  .border-animation:focus {
+    border: 1px solid rgba(8, 155, 40, 0.7);
+    box-shadow: 0 0 10px rgba(3, 183, 42, 0.7);
+  }
+
+  .logo {
     font-family: "Inter", sans-serif !important;
   }
 }
 
-html, body {
+html,
+body {
   scroll-behavior: smooth;
   overflow-x: hidden;
 }

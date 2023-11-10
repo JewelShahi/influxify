@@ -40,6 +40,9 @@ module.exports = {
       'md': '768px',
       // => @media (min-width: 768px) { ... }
 
+      'card' : {'max' : '860px'},
+      // => @media (max-width: 860px) { ... }
+
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
 
