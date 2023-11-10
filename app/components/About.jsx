@@ -4,7 +4,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="flex flex-col md:flex-row py-16 px-8 items-center justify-evenly mt-[10px]" id="about">
-      <div className="flex flex-col w-[50%]">
+      <div className="flex flex-col w-[70%] text-center items-center">
         <h1 className="text-h1 font-bold">About us</h1>
         <p className="w-[400px] break-words">
           No wonder that promotion strategy is one of the most important
@@ -133,7 +133,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="flex mx-2 p-2">
+      <div className="flex mx-auto p-2">
         <Image src="/assets/Group25.png" alt="ll" width={600} height={600} />
       </div>
     </div>

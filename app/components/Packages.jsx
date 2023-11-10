@@ -1,5 +1,6 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useState } from "react";
 
 const PackageCard = ({ title, users, price, image }) => (
   <div className="inline-block px-3 py-1">
@@ -25,45 +26,53 @@ const Packages = () => {
       title: "The basic package to start your promotion",
       users: "100+ users",
       price: "$79.00",
-      image: '/assets/heroMain.png',
+      image: "/assets/heroMain.png",
     },
     {
       title: "The basic package to start your promotion",
       users: "200+ users",
       price: "$89.00",
-      image: '/assets/heroMain.png',
+      image: "/assets/heroMain.png",
     },
     {
       title: "Another package title",
       users: "300+ users",
       price: "$99.00",
-      image: '/assets/heroMain.png',
+      image: "/assets/heroMain.png",
     },
     {
       title: "Yet another package title",
       users: "400+ users",
       price: "$109.00",
-      image: '/assets/heroMain.png',
+      image: "/assets/heroMain.png",
     },
     {
       title: "One more package title",
       users: "500+ users",
       price: "$119.00",
-      image: '/assets/heroMain.png',
+      image: "/assets/heroMain.png",
     },
     {
       title: "One more package title",
       users: "600+ users",
       price: "$129.00",
-      image: '/assets/heroMain.png',
+      image: "/assets/heroMain.png",
     },
   ];
+
+  const [left, setLeft] = useState(true);
+  const isLeft = () => {
+    setLeft(true);
+  };
+  const isRight = () => {
+    setLeft(false);
+  };
 
   return (
     <div className="bg-[#ECF9FF] py-20 flex flex-col">
       <div className="flex justify-center flex-row mb-2">
         <div className="flex justify-center items-center">
-          <h2 className="text-h2 font-bold flex w-[500px]">
+          <h2 className="text-h2 font-bold flex w-[50%] px-2">
             <svg
               className="-mr-[104px]"
               width="46"
@@ -78,13 +87,13 @@ const Packages = () => {
                 strokeWidth="10"
               />
             </svg>
-            Popular Packages
+            <p className="flex">Popular Packages</p>
           </h2>
         </div>
         {/* arrow container div */}
         <div className="flex flex-row gap-1">
           {/* left arrow */}
-          <button>
+          <button onClick={isLeft}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -105,7 +114,7 @@ const Packages = () => {
             </svg>
           </button>
           {/* right arrow */}
-          <button>
+          <button onClick={isRight}>
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -128,7 +137,11 @@ const Packages = () => {
         </div>
       </div>
       {/* container for the cards */}
-      <div className="overflow-x-scroll ml-3 flex w-[100%] items-end justify-start">
+      <div
+        className={`'overflow-x-hidden ${
+          !isLeft ? "ml-[50%]" : "ml-[10%]"
+        } flex w-[100%] items-end justify-start'`}
+      >
         {packageData.map((item, index) => (
           <PackageCard key={index} {...item} />
         ))}
