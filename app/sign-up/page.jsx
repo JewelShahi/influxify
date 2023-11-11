@@ -25,18 +25,28 @@ function SignUp() {
   const handleSubmit = async (e) => {
     e.preventDefault();
 
+    console.log(typeof formData);
     // Send a POST request with the form data
-    const response = await fetch("http://127.0.0.1:8000/sign-up/", {
+    const response = await fetch("http://localhost:8000/sign-up/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
       },
-      body: JSON.stringify(formData),
+      body: JSON.stringify({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        password: formData.password,
+        username: formData.username,
+      }),
+    }).then((response) => {
+      console.log(response);
+      return response;
     });
 
     // Handle the response as needed
-    const data = await response.json();
-    console.log(data);
+    //const data = await response.json();
+    //console.log(data);
   };
   return (
     <div className="h-auto w-full flex justify-center items-center p-5 bg-secondary/30">
@@ -113,7 +123,7 @@ function SignUp() {
               <label htmlFor="agree">I agree with the Terms and Privacy</label>
             </div>
             <input
-            onClick={handleSubmit}
+              onClick={handleSubmit}
               type="submit"
               value="Sign Up"
               className="submit bg-secondary click-animation hover:bg-secondary-hover w-full"
