@@ -11,7 +11,7 @@ const NotFound = () => {
         className="w-[45%] max-w-[650px] min-w-[270px] my-[15px]"
       />
       <h2 className="text-[30px] sm:text-[50px] font-bold">
-        Ooops! Page Not Found.
+        Oops! Page Not Found.
       </h2>
       <h5 className="text-[20px] sm:text-[25px]">
         The page you are looking for doesn't exist or another error has occured.
