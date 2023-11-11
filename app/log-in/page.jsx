@@ -3,42 +3,54 @@ import React from "react";
 
 function LogIn() {
   return (
-    <div className="h-screen w-full flex flex-col md:flex-row items-center justify-evenly bg-secondary/30 ">
-      <Image src={"/assets/heroMain.png"} width={300} height={300} alt="" />
-      <div>
-        <h1>Log In to your account</h1>
+    <div className="h-auto w-full flex justify-center items-center p-5 bg-secondary/30">
+      <div className="w-full flex flex-col md:flex-row items-center justify-evenly mt-24">
+        <Image src={"/assets/heroMain.png"} width={300} height={300} alt="" />
         <div>
-          <form action="">
-            <label htmlFor="email">E-mail</label>
-            <br />
+          <h3 className="text-[35px] text-center font-bold">Log In to your account</h3>
+          <form
+            action=""
+            className="flex flex-col justify-center items-start gap-3 mt-3"
+          >
             <input
               type="email"
-              placeholder="E-mail..."
               name="email"
-              className="input"
+              placeholder="example@example.com"
+              title="Your e-mail."
+              className="input border-animation w-full"
+              required
             />
-            <br />
-            <label htmlFor="password">Password</label>
-            <br />
             <input
               type="password"
-              placeholder="Password..."
               name="password"
-              className="input"
+              placeholder="Password"
+              title="Your password."
+              className="input border-animation w-full"
+              required
             />
-            <br />
-            <input type="checkbox" name="agree" />
-            <label htmlFor="agree">Remember me</label>
-            <br />
-            <input type="submit" value="LogIn" />
+            <div>
+              <input type="checkbox" name="agree" className="mr-2"/>
+              <label htmlFor="agree">Remember me</label>
+            </div>
+            <input
+              type="submit"
+              value="Log In"
+              className="submit bg-secondary click-animation hover:bg-secondary-hover w-full"
+            />
           </form>
-        </div>
-        <div>
-          <hr />
-          Log in with
-          <button>Google</button>
-          <button>Facebook</button>
-          <button>Apple</button>
+          <br />
+          <hr className="border-[2px] rounded-standard border-black/70"/>
+          <div className="flex flex-col justify-center items-start gap-2 mt-2">
+            <button className="submit bg-black/95 click-animation hover:bg-black/80 w-full">
+              Google
+            </button>
+            <button className="submit bg-black/95 click-animation hover:bg-black/80 w-full">
+              Facebook
+            </button>
+            <button className="submit bg-black/95 click-animation hover:bg-black/80 w-full">
+              Apple
+            </button>
+          </div>
         </div>
       </div>
     </div>

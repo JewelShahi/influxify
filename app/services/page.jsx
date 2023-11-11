@@ -35,10 +35,10 @@ const Services = () => {
           <p>ul. "Jira" 48, g.k. Nova, Lope</p>
         </div>
       </div>
-      <div className="flex flex-col lg:flex-row justify-between items-center mt-2 lg:mt-5 lg:w-[100%]">
+      <div className="flex flex-col lg:flex-row justify-between items-center mt-2 lg:mt-5 lg:w-[100%] p-2">
         <div className="flex flex-col items-center justify-center">
-          <h1 className="text-[40px] font-bold">Create a service ticket</h1>
-          <p className="text-[18px]">Just fill up the blanks</p>
+          <h2 className="text-[40px] font-bold">Create a service ticket</h2>
+          <p className="text-[18px]">Fill up the blanks to send a request</p>
           <form
             action=""
             id="usrform"
@@ -46,26 +46,26 @@ const Services = () => {
           >
             <div className="flex flex-row gap-2">
               <input
-                className="inside-input border-animation"
                 type="text"
-                placeholder="Full Name..."
-                required
+                placeholder="John Doe"
                 title="Your name."
+                className="inside-input border-animation"
+                required
               />
               <input
-                className="inside-input border-animation"
                 type="tel"
                 placeholder="+1 234 567890"
-                required
                 title="Your phone number."
+                className="inside-input border-animation"
+                required
               />
             </div>
             <input
-              className="input border-animation"
               type="email"
               placeholder="example@example.com"
-              required
               title="Your e-mail."
+              className="input border-animation"
+              required
             />
             <textarea
               rows="4"
@@ -78,19 +78,13 @@ const Services = () => {
             ></textarea>
             <input
               type="submit"
-              className="submit bg-secondary click-animation hover:bg-secondary-hover"
               value="Send Request"
+              className="submit bg-secondary click-animation hover:bg-secondary-hover"
             />
           </form>
         </div>
-        <div className="flex flex-col justify-center items-center p-5 lg:w-[100%]">
+        <div className="flex flex-col justify-center items-center p-4 lg:p-2 lg:w-[70%]">
           <h3 className="text-[26px] font-bold">Our Location</h3>
-          {/* <Image
-            src={"/assets/heroMain.png"}
-            alt="service image"
-            width={500}
-            height={500}
-          /> */}
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2933.760479621794!2d23.37260027612511!3d42.666430871166014!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40aa8679286c7ed7%3A0x4a9d96383bfc10e5!2sJohn%20Atanasoff%20Forum%2C%20Sofia%20Tech%20Park!5e0!3m2!1sen!2sbg!4v1699658121186!5m2!1sen!2sbg"
             style={{ border: "0" }}

@@ -95,7 +95,7 @@ const Footer = () => {
         </div>
       </div>
       {/* Under*/}
-      <div className="bg-[#000020] text-white text-[16px] font-light flex justify-around py-4 px-2">
+      <div className="bg-[#000020] text-white text-[16px] font-light flex justify-around py-4 px-2 xs:flex-col xs:justify-center xs:items-center text-center">
         <h5>Copyright &copy; 2023 Influxify</h5>
         <h6>All rights reserved</h6>
       </div>

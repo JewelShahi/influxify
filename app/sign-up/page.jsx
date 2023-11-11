@@ -1,83 +1,103 @@
 import Image from "next/image";
 import React from "react";
 
-function LogIn() {
+function SignUp() {
   return (
-    <div className="h-screen w-full flex flex-col md:flex-row items-center justify-evenly bg-secondary/30 ">
-      <Image
-        src={"/assets/heroMain.png"}
-        width={300}
-        height={300}
-        alt="sign-up image"
-      />
-      <div>
-        <h1>Create an account</h1>
-        <form action="">
-          <div>
-            <label htmlFor="firstName">Full Name</label> <br />
-            <div className="flex flex-row gap-2">
+    <div className="h-auto w-full flex justify-center items-center p-5 bg-secondary/30">
+      <div className="w-full flex flex-col md:flex-row items-center justify-evenly mt-24">
+        <div>
+          <h3 className="text-[35px] text-center font-bold">
+            Create an account
+          </h3>
+          <form
+            action=""
+            className="flex flex-col justify-center items-start gap-3 mt-3"
+          >
+            <div className="flex flex-row gap-3">
               <input
                 type="text"
-                placeholder="First Name..."
                 name="firstName"
-                className="input"
+                placeholder="John"
+                title="Your first name."
+                className="inside-input border-animation"
+                required
               />
               <input
                 type="text"
-                placeholder="Last Name..."
                 name="lastName"
-                className="input"
+                placeholder="Doe"
+                title="Your last name."
+                className="inside-input border-animation"
+                required
               />
             </div>
+            <input
+              type="text"
+              name="username"
+              placeholder="Username"
+              title="Your username."
+              className="input border-animation w-full"
+              required
+            />
+            <input
+              type="email"
+              name="e-mail"
+              placeholder="example@example.com"
+              title="Your e-mail."
+              className="input border-animation w-full"
+              required
+            />
+            <div className="flex flex-row gap-3">
+              <input
+                type="password"
+                name="password"
+                placeholder="Password"
+                title="Your password."
+                className="inside-input border-animation"
+                required
+              />
+              <input
+                type="password"
+                name="confirmPassword"
+                placeholder="Confirm password"
+                title="Confirm your password."
+                className="inside-input border-animation"
+                required
+              />
+            </div>
+            <div>
+              <input type="checkbox" name="agree" className="mr-2" />
+              <label htmlFor="agree">I agree with the Terms and Privacy</label>
+            </div>
+            <input
+              type="submit"
+              value="Sign Up"
+              className="submit bg-secondary click-animation hover:bg-secondary-hover w-full"
+            />
+          </form>
+          <br />
+          <hr className="border-[2px] rounded-standard border-black/70" />
+          <div className="flex flex-col justify-center items-start gap-2 mt-2">
+            <button className="submit bg-black/95 click-animation hover:bg-black/80 w-full">
+              Google
+            </button>
+            <button className="submit bg-black/95 click-animation hover:bg-black/80 w-full">
+              Facebook
+            </button>
+            <button className="submit bg-black/95 click-animation hover:bg-black/80 w-full">
+              Apple
+            </button>
           </div>
-          <label htmlFor="username">Username</label> <br />
-          <input
-            type="text"
-            placeholder="Username..."
-            name="username"
-            className="input"
-          />{" "}
-          <br />
-          <label htmlFor="">E-mail</label> <br />
-          <input
-            type="email"
-            placeholder="E-mail..."
-            name="e-mail"
-            className="input"
-          />
-          <br />
-          <label htmlFor="password">Password</label> <br />
-          <input
-            type="password"
-            placeholder="Password..."
-            name="password"
-            className="input"
-          />
-          <br />
-          <label htmlFor="changePassword">Change password</label> <br />
-          <input
-            type="password"
-            placeholder="Change password..."
-            name="changePassword"
-            className="input"
-          />
-          <br />
-          <input type="checkbox" name="agree" />
-          <label htmlFor="agree">I agree with the Terms and Privacy</label>
-          <br />
-          <input type="submit" value="Sign Up" />
-          <br />
-        </form>
-        <div>
-          <hr />
-          Sign up with
-          <button>Google</button>
-          <button>Facebook</button>
-          <button>Apple</button>
         </div>
+        <Image
+          src={"/assets/heroMain.png"}
+          width={300}
+          height={300}
+          alt="sign-up image"
+        />
       </div>
     </div>
   );
 }
 
-export default LogIn;
+export default SignUp;
