@@ -1,7 +1,43 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import React, { useEffect } from "react";
+import { useState } from "react";
 
 function SignUp() {
+  const [formData, setFormData] = useState({
+    // Initialize form fields here
+    firstName: "",
+    lastName: "",
+    username: "",
+    email: "",
+    password: "",
+    // Add more fields as needed
+  });
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    // Send a POST request with the form data
+    const response = await fetch("http://127.0.0.1:8000/sign-up/", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(formData),
+    });
+
+    // Handle the response as needed
+    const data = await response.json();
+    console.log(data);
+  };
   return (
     <div className="h-auto w-full flex justify-center items-center p-5 bg-secondary/30">
       <div className="w-full flex flex-col md:flex-row items-center justify-evenly mt-24">
@@ -9,10 +45,7 @@ function SignUp() {
           <h3 className="text-[35px] text-center font-bold">
             Create an account
           </h3>
-          <form
-            action=""
-            className="flex flex-col justify-center items-start gap-3 mt-3"
-          >
+          <form className="flex flex-col justify-center items-start gap-3 mt-3">
             <div className="flex flex-row gap-3">
               <input
                 type="text"
@@ -21,6 +54,8 @@ function SignUp() {
                 title="Your first name."
                 className="inside-input border-animation"
                 required
+                onChange={handleInputChange}
+                value={formData.firstName}
               />
               <input
                 type="text"
@@ -29,6 +64,8 @@ function SignUp() {
                 title="Your last name."
                 className="inside-input border-animation"
                 required
+                onChange={handleInputChange}
+                value={formData.lastName}
               />
             </div>
             <input
@@ -38,14 +75,18 @@ function SignUp() {
               title="Your username."
               className="input border-animation w-full"
               required
+              onChange={handleInputChange}
+              value={formData.username}
             />
             <input
               type="email"
-              name="e-mail"
+              name="email"
               placeholder="example@example.com"
               title="Your e-mail."
               className="input border-animation w-full"
               required
+              onChange={handleInputChange}
+              value={formData.email}
             />
             <div className="flex flex-row gap-3">
               <input
@@ -55,6 +96,8 @@ function SignUp() {
                 title="Your password."
                 className="inside-input border-animation"
                 required
+                onChange={handleInputChange}
+                value={formData.password}
               />
               <input
                 type="password"
@@ -70,6 +113,7 @@ function SignUp() {
               <label htmlFor="agree">I agree with the Terms and Privacy</label>
             </div>
             <input
+            onClick={handleSubmit}
               type="submit"
               value="Sign Up"
               className="submit bg-secondary click-animation hover:bg-secondary-hover w-full"
