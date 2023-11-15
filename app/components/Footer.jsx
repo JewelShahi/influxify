@@ -26,7 +26,8 @@ const Footer = () => {
             <li>
               <button>
                 <Image
-                  src={"/assets/Facebook.png"}
+                  src={"/assets/facebook.svg"}
+                  alt={"facebook"}
                   width={30}
                   height={30}
                 />
@@ -35,7 +36,8 @@ const Footer = () => {
             <li>
               <button>
                 <Image
-                  src={"/assets/Instagram.png"}
+                  src={"/assets/instagram.svg"}
+                  alt={"instagram"}
                   width={30}
                   height={30}
                 />
@@ -44,7 +46,8 @@ const Footer = () => {
             <li>
               <button>
                 <Image
-                  src={"/assets/et_twitter.png"}
+                  src={"/assets/linked-in.svg"}
+                  alt={"linked-in"}
                   width={30}
                   height={30}
                 />
@@ -53,7 +56,8 @@ const Footer = () => {
             <li>
               <button>
                 <Image
-                  src={"/assets/LinkedIn.png"}
+                  src={"/assets/twitter.svg"}
+                  alt={"twitter"}
                   width={30}
                   height={30}
                 />

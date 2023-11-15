@@ -40,11 +40,8 @@ module.exports = {
       'md': '768px',
       // => @media (min-width: 768px) { ... }
 
-      'nav' :'800px',
+      'lmd' :'800px',
       // => @media (min-width: 800px) { ... }
-
-      'card' : {'max' : '860px'},
-      // => @media (max-width: 860px) { ... }
 
       'lg': '1024px',
       // => @media (min-width: 1024px) { ... }
