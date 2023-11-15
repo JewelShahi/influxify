@@ -8,7 +8,7 @@ const Hero = () => {
       {/* bg-heroBg */}
       <div className="flex flex-col lg:flex-row items-center justify-around md:justify-center md:w-[100%] flex-wrap relative top-[140px]">
         <div className="px-3 py-2 items-center">
-          <h2 className="text-h2 max-w-xl p-2 font-bold">
+          <h2 className="text-[35px] md:text-h2 max-w-[35rem] p-2 font-bold">
             Perfect place for your business promotion
           </h2>
           <p className="w-[450px] p-2 ">

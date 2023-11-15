@@ -3,7 +3,7 @@ import Image from "next/image";
 import React, { useEffect } from "react";
 import { useState } from "react";
 
-function SignUp() {
+const SignUp = () => {
   const [formData, setFormData] = useState({
     // Initialize form fields here
     firstName: "",

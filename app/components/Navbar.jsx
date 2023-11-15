@@ -23,7 +23,7 @@ const Navbar = () => {
             </h2>
           </Link>
         </div>
-        <div className="hidden md:flex flex-row items-center space-x-10">
+        <div className="hidden nav:flex flex-row items-center space-x-10">
           <div className="flex w-auto flex-row">
             <ul className="flex flex-row gap-4 font-medium font-[Arial]">
               <Link
@@ -68,7 +68,7 @@ const Navbar = () => {
           </div>
         </div>
         <button
-          className="block md:hidden"
+          className="block nav:hidden"
           onClick={() => setClicked(!clicked)}
         >
           {!clicked ? (
@@ -108,7 +108,7 @@ const Navbar = () => {
       <div
         className={
           clicked
-            ? "flex flex-col h-screen md:hidden m-auto items-center justify-center bg-primary w-full "
+            ? "flex flex-col h-screen nav:hidden m-auto items-center justify-center bg-primary w-full "
             : "hidden"
         }
       >
