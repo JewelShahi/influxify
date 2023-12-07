@@ -5,7 +5,6 @@ import About from "./components/About";
 import GlobalPromotion from "./components/GlobalPromotion";
 import Packages from "./components/Packages";
 import Loading from "./loading";
-import InternalServerError from "./500"
 
 export default function Home() {
   return (
@@ -15,8 +14,6 @@ export default function Home() {
       <About />
       <Packages />
       <GlobalPromotion />
-      <Loading />
-      <InternalServerError />
     </main>
   );
 }

@@ -164,9 +164,10 @@ import Image from "next/image";
 const Hero = () => {
   return (
     <div className="min-h-screen w-full bg-heroBg/80">
-      <div className="flex flex-col items-center justify-center md:w-full">
-        <div className="px-3 py-2 items-center text-center">
-          <h2 className="text-xl md:text-2xl max-w-[35rem] p-2 font-bold">
+      {/* bg-heroBg */}
+      <div className="flex flex-col lg:flex-row items-center justify-around md:justify-center md:w-[90%] flex-wrap relative top-[140px]">
+        <div className="px-3 py-2 items-center">
+          <h2 className="text-[35px] md:text-h2 max-w-[35rem] p-2 font-bold">
             Perfect place for your business promotion
           </h2>
           <p className="max-w-[450px] p-2">
